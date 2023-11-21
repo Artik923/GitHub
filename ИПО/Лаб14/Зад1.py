@@ -1,43 +1,43 @@
 class Circus:
-    def __init__(self, название, город, дата_премьеры, период_проведения, цена_билета, автор, жанр, количество_актеров):
-        self.название = название
-        self.город = город
-        self.дата_премьеры = дата_премьеры
-        self.период_проведения = период_проведения
-        self.цена_билета = цена_билета
-        self.автор = автор
-        self.жанр = жанр
-        self.количество_актеров = количество_актеров
+    def __init__(self, title, city, premiere_date, duration, ticket_price, author, genre, number_of_actors):
+        self.title = title
+        self.city = city
+        self.premiere_date = premiere_date
+        self.duration = duration
+        self.ticket_price = ticket_price
+        self.author = author
+        self.genre = genre
+        self.number_of_actors = number_of_actors
 
     def __str__(self):
-        return f"Цирк: {self.название}, Город: {self.город}, Дата премьеры: {self.дата_премьеры}, Период проведения: {self.период_проведения}, Цена билета: {self.цена_билета}, Автор: {self.автор}, Жанр: {self.жанр}, Количество актеров: {self.количество_актеров}"
+        return f"Circus: {self.title}, City: {self.city}, Premiere date: {self.premiere_date}, Duration: {self.duration}, Ticket price: {self.ticket_price}, Author: {self.author}, Genre: {self.genre}, Number of actors: {self.number_of_actors}"
 
 class Acrobatic_performances(Circus):
-    def __init__(self, название, город, дата_премьеры, период_проведения, цена_билета, автор, жанр, количество_актеров, тип_акробатики, инвентарь):
-        super().__init__(название, город, дата_премьеры, период_проведения, цена_билета, автор, жанр, количество_актеров)
-        self.тип_акробатики = тип_акробатики
-        self.инвентарь = инвентарь
+    def __init__(self, title, city, premiere_date, duration, ticket_price, author, genre, number_of_actors, type_of_acrobatics, inventory):
+        super().__init__(title, city, premiere_date, duration, ticket_price, author, genre, number_of_actors)
+        self.type_of_acrobatics = type_of_acrobatics
+        self.inventory = inventory
 
     def __str__(self):
-        return f"Акробатические представления: {self.название}, Город: {self.город}, Дата премьеры: {self.дата_премьеры}, Период проведения: {self.период_проведения}, Цена билета: {self.цена_билета}, Автор: {self.автор}, Жанр: {self.жанр}, Количество актеров: {self.количество_актеров}, Тип акробатики: {self.тип_акробатики}, Инвентарь: {self.инвентарь}"
+        return f"Acrobatic performances: {self.title}, City: {self.city}, Premiere date: {self.premiere_date}, Duration: {self.duration}, Ticket price: {self.ticket_price}, Author: {self.author}, Genre: {self.genre}, Number of actors: {self.number_of_actors}, Type of acrobatics: {self.type_of_acrobatics}, Inventory: {self.inventory}"
 
 class Training(Circus):
-    def __init__(self, название, город, дата_премьеры, период_проведения, цена_билета, автор, жанр, количество_актеров, вид_дрессировки, количество_животных):
-        super().__init__(название, город, дата_премьеры, период_проведения, цена_билета, автор, жанр, количество_актеров)
-        self.вид_дрессировки = вид_дрессировки
-        self.количество_животных = количество_животных
+    def __init__(self, title, city, premiere_date, duration, ticket_price, author, genre, number_of_actors, type_of_training, number_of_animals):
+        super().__init__(title, city, premiere_date, duration, ticket_price, author, genre, number_of_actors)
+        self.type_of_training = type_of_training
+        self.number_of_animals = number_of_animals
 
     def __str__(self):
-        return f"Дрессировка: {self.название}, Город: {self.город}, Дата премьеры: {self.дата_премьеры}, Период проведения: {self.период_проведения}, Цена билета: {self.цена_билета}, Автор: {self.автор}, Жанр: {self.жанр}, Количество актеров: {self.количество_актеров}, Вид дрессировки: {self.вид_дрессировки}, Количество животных: {self.количество_животных}"
+        return f"Training: {self.title}, City: {self.city}, Premiere date: {self.premiere_date}, Duration: {self.duration}, Ticket price: {self.ticket_price}, Author: {self.author}, Genre: {self.genre}, Number of actors: {self.number_of_actors}, Type of training: {self.type_of_training}, Number of animals: {self.number_of_animals}"
 
 class Magic_tricks(Circus):
-    def __init__(self, название, город, дата_премьеры, период_проведения, цена_билета, автор, жанр, количество_актеров, вид_фокусов, инвентарь):
-        super().__init__(название, город, дата_премьеры, период_проведения, цена_билета, автор, жанр, количество_актеров)
-        self.вид_фокусов = вид_фокусов
-        self.инвентарь = инвентарь
+    def __init__(self, title, city, premiere_date, duration, ticket_price, author, genre, number_of_actors, type_of_tricks, inventory):
+        super().__init__(title, city, premiere_date, duration, ticket_price, author, genre, number_of_actors)
+        self.type_of_tricks = type_of_tricks
+        self.inventory = inventory
 
     def __str__(self):
-        return f"Фокусы: {self.название}, Город: {self.город}, Дата премьеры: {self.дата_премьеры}, Период проведения: {self.период_проведения}, Цена билета: {self.цена_билета}, Автор: {self.автор}, Жанр: {self.жанр}, Количество актеров: {self.количество_актеров}, Вид фокусов: {self.вид_фокусов}, Инвентарь: {self.инвентарь}"
+        return f"Magic tricks: {self.title}, City: {self.city}, Premiere date: {self.premiere_date}, Duration: {self.duration}, Ticket price: {self.ticket_price}, Author: {self.author}, Genre: {self.genre}, Number of actors: {self.number_of_actors}, Type of tricks: {self.type_of_tricks}, Inventory: {self.inventory}"
 
 # Создание экземпляров классов
 acro = Acrobatic_performances("Акробатика в воздухе", "Москва", "01.01.2022", "01.01.2022 - 31.12.2022", 2000, "Иванов И.И.", "Акробатика", 10, "силовая акробатика", "трапеция")
