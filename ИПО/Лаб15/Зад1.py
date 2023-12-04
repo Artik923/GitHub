@@ -36,3 +36,4 @@ for size in sizes:
 
 for size, time_taken in zip(sizes, times):
     print(f"Размер: {size}, Потраченное время: {time_taken} секунд")
+    
