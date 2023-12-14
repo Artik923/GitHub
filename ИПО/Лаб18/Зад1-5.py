@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 # Загрузка изображения
-img = Image.open("C:\GitHub\image.jpg")
+img = Image.open("image.jpg")
 
 # Сохранение изображения в другом формате
 img.save('image1_25.png')
