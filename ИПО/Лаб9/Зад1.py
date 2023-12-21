@@ -1,5 +1,3 @@
-# Нахождение всех пар "близнецов"
-
 def find_twins(n):
     twins = []
     for i in range(n, 2*n - 1):
@@ -21,9 +19,6 @@ print("Пары близнецов:")
 for twin in twins:
     print(twin)
 
-
-# Обмен максимальных элементов матриц
-
 def find_max(matrix):
     max_val = matrix[0][0]
     max_i = 0
@@ -42,7 +37,6 @@ def swap_max(matrix_a, matrix_b):
     
     matrix_a[max_i_a][max_j_a], matrix_b[max_i_b][max_j_b] = matrix_b[max_i_b][max_j_b], matrix_a[max_i_a][max_j_a]
 
-# Пример использования
 matrix_A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 matrix_B = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
 
