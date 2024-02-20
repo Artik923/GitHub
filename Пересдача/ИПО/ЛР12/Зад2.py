@@ -18,27 +18,6 @@
 - get_price() - возвращает цену сканера
 
 """
-
-class Scanner:
-    def init(self, model, resolution, color_depth, document_feeder, interface, price):
-        self.model = model
-        self.resolution = resolution
-        self.color_depth = color_depth
-        self.document_feeder = document_feeder
-        self.interface = interface
-        self.price = price
-    def get_model(self):
-        return self.model
-    def get_resolution(self):
-        return self.resolution
-    def get_color_depth(self):
-        return self.color_depth
-    def is_document_feeder(self):
-        return self.document_feeder
-    def get_interface(self):
-        return self.interface
-    def get_price(self):
-        return self.price
 class Scanner:
     def __init__(self, model, resolution, color_depth, document_feeder, interface, price):
         self.set_model(model)
